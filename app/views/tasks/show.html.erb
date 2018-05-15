@@ -1,0 +1,8 @@
+<h1><%= @task.title %></h1>
+<p><%= @task.details %></p>
+<p>Completed: <%= @task.completed %></p>
+<%= link_to 'Edit', edit_task_path %>
+<%= link_to 'Show all', tasks_path %>
+<%= button_to 'Delete', task_path, method:'delete', data: {confirm: 'Are you sure?'} %>
+
+

@@ -1,0 +1,18 @@
+<h1><%= @task.title %></h1>
+<p><%= @task.details %></p>
+<p>Completed: <%= @task.completed %></p>
+
+
+<%= form_for @task do |f| %>
+  <%= f.label :title  %>
+  <%= f.text_field :title  %>
+
+  <%= f.label :details  %>
+  <%= f.text_field :details  %>
+
+  <%= f.label :completed  %>
+  <%= f.check_box :completed  %>
+
+  <%= f.label :Submit  %>
+  <%= f.submit  %>
+<% end %>
